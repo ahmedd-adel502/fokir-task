@@ -1,14 +1,25 @@
+/* >>>>>>>>>>>>>>> */
 @media screen and (max-width:1536px){
-    
+    .feedback-item::after{
+        content: "";
+        background-color: #ff305b;
+        position: absolute;
+        top:-40px;
+        left: -150px;
+        bottom: 230px;
+        right:280px;
+        z-index: 0.5;
+        transform: rotate(135deg);
+    }
+    .blog-item{
+        width: 30%;
+    }
+    iframe{
+        height: 140px
+    }
 }
+/* >>>>>>>>>>>>>>>> */
 @media screen and (max-width:1280px){
-    .navbar-content .logo{
-        width: 35%;
-    }
-    .navbar-content .navbar-list{
-        text-align: right;
-        width: 65%;
-    }
     .navbar-content ul li{
         margin-inline: 5px;
     }
@@ -18,12 +29,12 @@
     .about-content{
         align-items: flex-start;
     }
-    .about-desc{
-        width: 60%;
-    }
     .about-desc p{
         padding-bottom: 10px;
         font-size: 14px;
+    }
+    .portfolio-list{
+        width: 60%;
     }
     .about-desc .about-list li{
         padding-bottom: 10px;
@@ -55,17 +66,8 @@
     iframe{
         height: 118px
     }
-    .contact-form .first-input input , .second-input input{
-        width: 340px;
-    }
-    .contact-form .subject input,.contact-form .textarea textarea{
-        width: 685px;
-    }
-    .contact-form .btn{
-        margin-left: 0px
-    }
+   
 }
-
 
 /* >>>> */
 @media screen and (max-width:1024px) {
@@ -141,6 +143,9 @@
         bottom: 150px;
         right:430px;
     }
+    .portfolio-list{
+        width: 80%;
+    }
     .blog iframe{
         height: 116px;
     }
@@ -162,21 +167,10 @@
     .contact-form{
         margin: 0;
         text-align: center;
+        width: 100%;
     }
-    .first-input input,.second-input input{
-        width: 300px;
-    }
-    .subject input,.textarea textarea{
-        width: 605px;
-    }
-    .contact-form .btn{
-        margin-left: 18px;
-    }
-
 }
-
 /* >>>>>>>>>>>>>>>> */
-
 @media screen and (max-width:992px) {
     .navbar-content .logo{
         width: 20%;
@@ -200,14 +194,17 @@
         padding-inline: 10px;
         font-size: 12px;
     }
+    .portfolio-list{
+        width: 80%;
+    }
     .feedback-item::after{
-        top:-40px;
+        top:-80px;
         left: -180px;
         bottom: 230px;
         right:220px;
     }
     .blog iframe{
-        height: 91px;
+        height: 110px;
     }
     .blog-item span{
         font-size: 12px;
@@ -221,18 +218,17 @@
     .blog-item a:nth-child(4){
         font-size: 12px;
     }
-    .contact-form .first-input input,.second-input input{
-        width: 250px;
-    }
-    .contact-form .subject input,.textarea textarea{
-        width: 505px;
-    }
+   
     .services h2::before,.portfolio h2::before,.blog h2::before {
         left: 38%; 
     }
     .services h2::after,.portfolio h2::after,.blog h2::after,.contact h2::after{
         left: 44%;
         
+    }
+     .contact-form{
+        width: 100%;
+        margin: auto;
     }
     .contact h2::before{
         left: 37%;
@@ -244,7 +240,6 @@
         font-size: 12px;
     }
 }
-
 /* >>>>>>>>>>>>>> */
 @media screen and (max-width:769px) {
     .navbar-content .navbar-list{
@@ -260,30 +255,33 @@
         height: 20px;
     }
     .about-content .about-desc p{
-        font-size: 12px;
+        font-size: 14px;
     }
     .about-content .about-desc ul{
-        font-size: 12px;
+        font-size: 14px;
     }
     .about-content .about-desc .btn{
-        padding: 10px 5px;
-        font-size: 10px;
+        padding: 10px 10px;
+        font-size: 12px;
     }
     .services-content{
         justify-content: flex-start;
         flex-wrap: wrap;
     }
     .services-content-item{
-        width: 45%;
+        width: 48%;
     }
     .portfolio-content .portfolio-item{
         width: 40%;
+    }
+    .portfolio-list{
+        width: 80%;
     }
     .feedback-item p{
         font-size: 12px;
     }
     .feedback-item::after{
-        top:-40px;
+        top:-60px;
         left: -180px;
         bottom: 230px;
         right:150px;
@@ -299,33 +297,123 @@
         width: 100%;
         height: auto;
     }
-    .contact-form .first-input input,.second-input input{
-        width: 180px;
-    }
-    .contact-form .subject input,.textarea textarea{
-        width: 365px;
+    .contact-form{
+        width: 100%;
+        margin: auto;
     }
     .contact-form .btn{
-        width: 100px;
-        font-size: 10px;
-        padding: 10px 7px;
+        padding: 15px 40px;
+        font-size: 14px;
     }
+
     .footer-list i{
         margin-inline: 5px;
     }
     .footer-copyright{
-        font-size: 12px;
+        font-size: 16px;
     }
 }
-/* >>>>>>>>>> */
+/* >>>>>>>>>>>>>>>> */
 @media screen and (max-width:576px){
-    .contact-form .first-input input,.second-input input{
-        width: 150px;
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        margin-inline: auto;
     }
-    .contact-form .subject input,.contact-form .textarea textarea{
-        width: 305px;
+    .about-person{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-inline: auto;
+    }
+    .about-person img{
+        width: 100%;
+    }
+    .about-desc{
+        margin-inline: 1.25rem;
+        width: 80%;
+    }
+    .about-content .about-desc .btn{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .services .container{
+        width: 90%;
+    }
+    .services h2::before{
+    left: 30%;
+    
+}
+    .services h2::after{
+        content: "";
+        width:80px;
+        height: 10px;
+        border-bottom: 1px solid #ff305b;
+        border-top: 1px solid #ff305b;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0%;
+        left: 40%;
+        right: 0;
+        top: 120%;
+    }
+        .services-content{
+        width: 100%;
+        margin: 60px auto;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+    }
+    .portfolio-content .portfolio-item{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .portfolio-footer-content{
+        width: 100%;
+        gap: 5px;
+    }
+    .portfolio-footer-item p{
+        font-size: 12px;
+    }
+    .feedback-content{
+        width: 90%;
+        margin: auto;
+    }
+    .feedback-content h2{
+        font-size: 32px;
+    }
+    .feedback-item{
+        width: 100%;
+        padding: 10px 0 40px 130px;
+    }
+    .feedback-item::after{
+        right: 90px;
+    }
+    .feedback-item img{
+        width: 25%;
     }
     .contact-form .btn{
-        margin-left: 25px;
+        margin-inline: auto;
     }
+    .contact-form{
+        width: 100%;
+    }
+    .portfolio h2::before{
+    left: 30%;
+}
+    .feedback-content h2::before{
+    left: 30%;
+}
+    .feedback-content h2::after{
+    top: 115%;
+}
+    .contact h2::before{
+    left: 30%;
+    }
+
+    .blog h2::before{
+    left: 30%;
+}
 }

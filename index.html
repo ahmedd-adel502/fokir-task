@@ -18,20 +18,20 @@
             <div class="navbar-content">
                <div class="container">
                     <div class="logo">
-                        <a href="#">Fokir</a>
+                        <a href="#home">Fokir</a>
                     </div>
                     <ul class="navbar-list">
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonial">Testimonial</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                  </div>
             </div>
-            <div class="home-section pd-100">
+            <div class="home-section pd-100" id="home">
                 <div class="container">
                     <div class="home-content">
                         <p>Hello i'm</p>
@@ -43,7 +43,7 @@
         </div>
     </div>
     <!-- about -->
-     <div class="about pd-100">
+     <div class="about pd-100" id="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-person">
@@ -70,15 +70,17 @@
                         <li><span>Freelance:</span> Available</li>
                         <li><span>Email:</span><a href="#"> example@gmail.com</a></li>
                     </ul>
-                    <button class="btn btn-download">Download CV<i class="fa-solid fa-download"></i></button>
-                    <button class="btn btn-Hire">Hire Me<i class="fa-solid fa-paper-plane"></i></button>
+                    <div class="btns">
+                        <button class="btn btn-download">Download CV<i class="fa-solid fa-download"></i></button>
+                        <button class="btn btn-Hire">Hire Me<i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
      </div>
 
      <!-- Services section -->
-      <div class="services pd-100">
+      <div class="services pd-100" id="services">
         <h2>Our Services</h2>
         <div class="container">
             <div class="services-content">
@@ -106,13 +108,13 @@
         </div>
       </div>
       <!-- portfolio section -->
-       <div class="portfolio pd-100">
+       <div class="portfolio pd-100" id="portfolio">
         <h2>Our Portfolio</h2>
         <ul class="portfolio-list">
-            <li><a href="#">All</a></li>
-            <li><a href="#">Graphic</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Branding</a></li>
+            <li><a href="#portfolio">All</a></li>
+            <li><a href="#portfolio">Graphic</a></li>
+            <li><a href="#portfolio">Web Design</a></li>
+            <li><a href="#portfolio">Branding</a></li>
         </ul>
         <div class="container">
             <div class="portfolio-content">
@@ -184,7 +186,7 @@
         </div>
         
         <!-- clients-feedback -->
-         <div class="feedback pd-100">
+         <div class="feedback pd-100" id="testimonial">
            <div class="container">
              <div class="feedback-content">
                   <h2>Client's Feedback</h2>
@@ -202,14 +204,14 @@
                     </div>
                   </div>
                   <ul class="feedback-dots">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="#testimonial"></a></li>
+                    <li><a href="#testimonial"></a></li>
                   </ul>
              </div>
            </div>
          </div>
          <!-- blog section -->
-          <div class="blog pd-100">
+          <div class="blog pd-100" id="blog">
                 <h2>Our Blog</h2>
                 <div class="container">
                     <div class="blog-content">
@@ -245,16 +247,18 @@
           </div>
 
           <!-- contact section -->
-           <div class="contact pd-100">
+           <div class="contact pd-100" id="contact">
                 <div class="container">
                     <h2>Contact Us</h2>
                     <div class="contact-form">
                         <form>
-                            <div class="first-input" data-error="first name is required">
+                            <div class="inputs-container">
+                                <div class="first-input" data-error="first name is required">
                                 <input type="text" placeholder="Name" required/>
-                            </div>
-                            <div class="second-input" data-error="please enter a valid email">
-                                <input type="email" placeholder="Email" required/>
+                                </div>
+                                <div class="second-input" data-error="please enter a valid email">
+                                    <input type="email" placeholder="Email" required/>
+                                </div>
                             </div>
                             <div class="subject" data-error="subject is required">
                                 <input type="text" placeholder="Subject" required/>
